@@ -1,0 +1,95 @@
+// =============================================================
+// Chicago Community Area Lookup Table
+// Supports searching by:
+// - Community Area Number
+// - Community Name
+// - Neighborhood Name
+// - ZIP Codes
+// =============================================================
+
+export interface CommunityArea {
+  number: number;
+  name: string;
+  neighborhoods: string[];
+  zipCodes: string[];
+}
+
+export const communityAreas: CommunityArea[] = [
+  { number: 1, name: "Rogers Park", neighborhoods: ["East Rogers Park", "West Rogers Park", "Jarvis Square"], zipCodes: ["60626", "60645"] },
+  { number: 2, name: "West Ridge", neighborhoods: ["Peterson Park", "West Rogers Park", "North Town"], zipCodes: ["60645", "60659"] },
+  { number: 3, name: "Uptown", neighborhoods: ["Buena Park", "Sheridan Park", "Argyle", "Asia on Argyle"], zipCodes: ["60613", "60640"] },
+  { number: 4, name: "Lincoln Square", neighborhoods: ["Ravenswood", "Bowmanville", "Budlong Woods"], zipCodes: ["60625"] },
+  { number: 5, name: "North Center", neighborhoods: ["St. Ben’s", "Roscoe Village"], zipCodes: ["60618"] },
+  { number: 6, name: "Lake View", neighborhoods: ["Wrigleyville", "Boystown", "Southport Corridor"], zipCodes: ["60657"] },
+  { number: 7, name: "Lincoln Park", neighborhoods: ["Old Town Triangle", "DePaul", "Ranch Triangle"], zipCodes: ["60614"] },
+  { number: 8, name: "Near North Side", neighborhoods: ["River North", "Cabrini-Green", "Gold Coast", "Old Town"], zipCodes: ["60610", "60611"] },
+  { number: 9, name: "Edison Park", neighborhoods: ["Edison Park"], zipCodes: ["60631"] },
+  { number: 10, name: "Norwood Park", neighborhoods: ["Norwood Park East", "Union Ridge"], zipCodes: ["60631", "60656"] },
+  { number: 11, name: "Jefferson Park", neighborhoods: ["Gladstone Park"], zipCodes: ["60630"] },
+  { number: 12, name: "Forest Glen", neighborhoods: ["Sauganash", "Forest Glen"], zipCodes: ["60646"] },
+  { number: 13, name: "North Park", neighborhoods: ["Hollywood Park"], zipCodes: ["60659"] },
+  { number: 14, name: "Albany Park", neighborhoods: ["Kedzie Gardens"], zipCodes: ["60625"] },
+  { number: 15, name: "Portage Park", neighborhoods: ["Portage Park"], zipCodes: ["60641"] },
+  { number: 16, name: "Irving Park", neighborhoods: ["Old Irving Park"], zipCodes: ["60618", "60641"] },
+  { number: 17, name: "Dunning", neighborhoods: ["Schorsch Village"], zipCodes: ["60634"] },
+  { number: 18, name: "Montclare", neighborhoods: ["Galewood"], zipCodes: ["60707"] },
+  { number: 19, name: "Belmont Cragin", neighborhoods: ["Belmont Central"], zipCodes: ["60639"] },
+  { number: 20, name: "Hermosa", neighborhoods: ["Kelvyn Park"], zipCodes: ["60639"] },
+  { number: 21, name: "Avondale", neighborhoods: ["Polish Village"], zipCodes: ["60618"] },
+  { number: 22, name: "Logan Square", neighborhoods: ["Logan Square", "Bucktown", "Palmer Square"], zipCodes: ["60647"] },
+  { number: 23, name: "Humboldt Park", neighborhoods: ["West Humboldt Park"], zipCodes: ["60651"] },
+  { number: 24, name: "West Town", neighborhoods: ["Wicker Park", "Ukrainian Village", "Noble Square"], zipCodes: ["60622"] },
+  { number: 25, name: "Austin", neighborhoods: ["South Austin", "North Austin", "Galewood"], zipCodes: ["60644", "60651"] },
+  { number: 26, name: "West Garfield Park", neighborhoods: [], zipCodes: ["60624"] },
+  { number: 27, name: "East Garfield Park", neighborhoods: [], zipCodes: ["60624"] },
+  { number: 28, name: "Near West Side", neighborhoods: ["University Village", "Little Italy"], zipCodes: ["60607", "60608"] },
+  { number: 29, name: "North Lawndale", neighborhoods: [], zipCodes: ["60623"] },
+  { number: 30, name: "South Lawndale", neighborhoods: ["Little Village"], zipCodes: ["60623"] },
+  { number: 31, name: "Lower West Side", neighborhoods: ["Pilsen"], zipCodes: ["60608"] },
+  { number: 32, name: "Loop", neighborhoods: ["The Loop"], zipCodes: ["60601", "60605"] },
+  { number: 33, name: "Near South Side", neighborhoods: ["Museum Campus"], zipCodes: ["60605", "60616"] },
+  { number: 34, name: "Armour Square", neighborhoods: ["Chinatown"], zipCodes: ["60616"] },
+  { number: 35, name: "Douglas", neighborhoods: ["Bronzeville"], zipCodes: ["60616", "60653"] },
+  { number: 36, name: "Oakland", neighborhoods: [], zipCodes: ["60653"] },
+  { number: 37, name: "Fuller Park", neighborhoods: [], zipCodes: ["60609"] },
+  { number: 38, name: "Grand Boulevard", neighborhoods: [], zipCodes: ["60653"] },
+  { number: 39, name: "Kenwood", neighborhoods: [], zipCodes: ["60615", "60653"] },
+  { number: 40, name: "Washington Park", neighborhoods: [], zipCodes: ["60615", "60637"] },
+  { number: 41, name: "Hyde Park", neighborhoods: [], zipCodes: ["60615", "60637"] },
+  { number: 42, name: "Woodlawn", neighborhoods: [], zipCodes: ["60637"] },
+  { number: 43, name: "South Shore", neighborhoods: [], zipCodes: ["60649"] },
+  { number: 44, name: "Chatham", neighborhoods: [], zipCodes: ["60619"] },
+  { number: 45, name: "Avalon Park", neighborhoods: [], zipCodes: ["60619"] },
+  { number: 46, name: "South Chicago", neighborhoods: [], zipCodes: ["60617"] },
+  { number: 47, name: "Burnside", neighborhoods: [], zipCodes: ["60619"] },
+  { number: 48, name: "Calumet Heights", neighborhoods: [], zipCodes: ["60617"] },
+  { number: 49, name: "Roseland", neighborhoods: [], zipCodes: ["60628"] },
+  { number: 50, name: "Pullman", neighborhoods: [], zipCodes: ["60628"] },
+  { number: 51, name: "South Deering", neighborhoods: [], zipCodes: ["60617"] },
+  { number: 52, name: "East Side", neighborhoods: [], zipCodes: ["60617"] },
+  { number: 53, name: "West Pullman", neighborhoods: [], zipCodes: ["60628"] },
+  { number: 54, name: "Riverdale", neighborhoods: [], zipCodes: ["60827"] },
+  { number: 55, name: "Hegewisch", neighborhoods: [], zipCodes: ["60633"] },
+  { number: 56, name: "Garfield Ridge", neighborhoods: [], zipCodes: ["60638"] },
+  { number: 57, name: "Archer Heights", neighborhoods: [], zipCodes: ["60632"] },
+  { number: 58, name: "Brighton Park", neighborhoods: [], zipCodes: ["60632"] },
+  { number: 59, name: "McKinley Park", neighborhoods: [], zipCodes: ["60609"] },
+  { number: 60, name: "Bridgeport", neighborhoods: [], zipCodes: ["60608", "60616"] },
+  { number: 61, name: "New City", neighborhoods: ["Back of the Yards"], zipCodes: ["60609", "60632"] },
+  { number: 62, name: "West Elsdon", neighborhoods: [], zipCodes: ["60629"] },
+  { number: 63, name: "Gage Park", neighborhoods: [], zipCodes: ["60632"] },
+  { number: 64, name: "Clearing", neighborhoods: [], zipCodes: ["60638"] },
+  { number: 65, name: "West Lawn", neighborhoods: [], zipCodes: ["60629"] },
+  { number: 66, name: "Chicago Lawn", neighborhoods: ["Marquette Park"], zipCodes: ["60629"] },
+  { number: 67, name: "West Englewood", neighborhoods: [], zipCodes: ["60636"] },
+  { number: 68, name: "Englewood", neighborhoods: [], zipCodes: ["60621"] },
+  { number: 69, name: "Greater Grand Crossing", neighborhoods: [], zipCodes: ["60619"] },
+  { number: 70, name: "Ashburn", neighborhoods: [], zipCodes: ["60652"] },
+  { number: 71, name: "Auburn Gresham", neighborhoods: [], zipCodes: ["60620"] },
+  { number: 72, name: "Beverly", neighborhoods: [], zipCodes: ["60643"] },
+  { number: 73, name: "Washington Heights", neighborhoods: [], zipCodes: ["60620"] },
+  { number: 74, name: "Mount Greenwood", neighborhoods: [], zipCodes: ["60655"] },
+  { number: 75, name: "Morgan Park", neighborhoods: [], zipCodes: ["60643"] },
+  { number: 76, name: "O’Hare", neighborhoods: [], zipCodes: ["60666"] },
+  { number: 77, name: "Edgewater", neighborhoods: ["Andersonville"], zipCodes: ["60660"] },
+];
