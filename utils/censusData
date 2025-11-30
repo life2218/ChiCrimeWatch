@@ -1,0 +1,93 @@
+
+export interface CensusInfo {
+  medianAge: number;
+  medianIncome: number;
+  avgHouseholdSize: number;
+}
+
+// Approximate data based on 2018-2022 ACS 5-Year Estimates for Chicago Community Areas
+export const citywideCensus: CensusInfo = {
+  medianAge: 35.2,
+  medianIncome: 65781,
+  avgHouseholdSize: 2.48,
+};
+
+export const censusData: Record<number, CensusInfo> = {
+  1: { medianAge: 34.2, medianIncome: 44321, avgHouseholdSize: 2.05 }, // Rogers Park
+  2: { medianAge: 36.1, medianIncome: 56420, avgHouseholdSize: 2.75 }, // West Ridge
+  3: { medianAge: 37.5, medianIncome: 52100, avgHouseholdSize: 1.78 }, // Uptown
+  4: { medianAge: 34.9, medianIncome: 78540, avgHouseholdSize: 2.15 }, // Lincoln Square
+  5: { medianAge: 33.5, medianIncome: 115200, avgHouseholdSize: 2.40 }, // North Center
+  6: { medianAge: 30.5, medianIncome: 95400, avgHouseholdSize: 1.75 }, // Lake View
+  7: { medianAge: 31.0, medianIncome: 120500, avgHouseholdSize: 1.90 }, // Lincoln Park
+  8: { medianAge: 32.5, medianIncome: 105600, avgHouseholdSize: 1.60 }, // Near North Side
+  9: { medianAge: 43.0, medianIncome: 108200, avgHouseholdSize: 2.50 }, // Edison Park
+  10: { medianAge: 41.5, medianIncome: 85300, avgHouseholdSize: 2.45 }, // Norwood Park
+  11: { medianAge: 40.2, medianIncome: 76500, avgHouseholdSize: 2.60 }, // Jefferson Park
+  12: { medianAge: 44.1, medianIncome: 110400, avgHouseholdSize: 2.75 }, // Forest Glen
+  13: { medianAge: 38.5, medianIncome: 62300, avgHouseholdSize: 2.80 }, // North Park
+  14: { medianAge: 34.0, medianIncome: 68500, avgHouseholdSize: 2.85 }, // Albany Park
+  15: { medianAge: 37.2, medianIncome: 72100, avgHouseholdSize: 2.70 }, // Portage Park
+  16: { medianAge: 35.8, medianIncome: 75400, avgHouseholdSize: 2.65 }, // Irving Park
+  17: { medianAge: 40.5, medianIncome: 74200, avgHouseholdSize: 2.60 }, // Dunning
+  18: { medianAge: 38.0, medianIncome: 64500, avgHouseholdSize: 3.10 }, // Montclare
+  19: { medianAge: 33.5, medianIncome: 58200, avgHouseholdSize: 3.25 }, // Belmont Cragin
+  20: { medianAge: 32.8, medianIncome: 54300, avgHouseholdSize: 3.15 }, // Hermosa
+  21: { medianAge: 34.2, medianIncome: 72500, avgHouseholdSize: 2.55 }, // Avondale
+  22: { medianAge: 32.5, medianIncome: 96800, avgHouseholdSize: 2.10 }, // Logan Square
+  23: { medianAge: 33.0, medianIncome: 48600, avgHouseholdSize: 2.80 }, // Humboldt Park
+  24: { medianAge: 32.0, medianIncome: 105300, avgHouseholdSize: 2.05 }, // West Town
+  25: { medianAge: 34.5, medianIncome: 35400, avgHouseholdSize: 2.85 }, // Austin
+  26: { medianAge: 32.0, medianIncome: 28500, avgHouseholdSize: 2.90 }, // West Garfield Park
+  27: { medianAge: 33.5, medianIncome: 31200, avgHouseholdSize: 2.75 }, // East Garfield Park
+  28: { medianAge: 31.5, medianIncome: 82500, avgHouseholdSize: 2.15 }, // Near West Side
+  29: { medianAge: 30.5, medianIncome: 26400, avgHouseholdSize: 2.80 }, // North Lawndale
+  30: { medianAge: 30.0, medianIncome: 38500, avgHouseholdSize: 3.40 }, // South Lawndale
+  31: { medianAge: 32.5, medianIncome: 49800, avgHouseholdSize: 2.60 }, // Lower West Side
+  32: { medianAge: 33.2, medianIncome: 102500, avgHouseholdSize: 1.65 }, // Loop
+  33: { medianAge: 34.0, medianIncome: 98400, avgHouseholdSize: 1.85 }, // Near South Side
+  34: { medianAge: 41.0, medianIncome: 42300, avgHouseholdSize: 2.20 }, // Armour Square
+  35: { medianAge: 36.5, medianIncome: 46200, avgHouseholdSize: 2.10 }, // Douglas
+  36: { medianAge: 35.0, medianIncome: 38500, avgHouseholdSize: 2.25 }, // Oakland
+  37: { medianAge: 38.0, medianIncome: 24500, avgHouseholdSize: 2.30 }, // Fuller Park
+  38: { medianAge: 35.5, medianIncome: 36400, avgHouseholdSize: 2.15 }, // Grand Boulevard
+  39: { medianAge: 37.0, medianIncome: 58600, avgHouseholdSize: 1.95 }, // Kenwood
+  40: { medianAge: 32.5, medianIncome: 28400, avgHouseholdSize: 2.35 }, // Washington Park
+  41: { medianAge: 33.0, medianIncome: 56800, avgHouseholdSize: 1.95 }, // Hyde Park
+  42: { medianAge: 34.5, medianIncome: 32500, avgHouseholdSize: 2.10 }, // Woodlawn
+  43: { medianAge: 38.0, medianIncome: 34200, avgHouseholdSize: 2.05 }, // South Shore
+  44: { medianAge: 42.5, medianIncome: 40500, avgHouseholdSize: 2.15 }, // Chatham
+  45: { medianAge: 43.0, medianIncome: 48600, avgHouseholdSize: 2.25 }, // Avalon Park
+  46: { medianAge: 36.0, medianIncome: 36800, avgHouseholdSize: 2.60 }, // South Chicago
+  47: { medianAge: 44.0, medianIncome: 38400, avgHouseholdSize: 2.30 }, // Burnside
+  48: { medianAge: 45.5, medianIncome: 56200, avgHouseholdSize: 2.35 }, // Calumet Heights
+  49: { medianAge: 39.5, medianIncome: 42500, avgHouseholdSize: 2.50 }, // Roseland
+  50: { medianAge: 40.0, medianIncome: 46800, avgHouseholdSize: 2.40 }, // Pullman
+  51: { medianAge: 37.5, medianIncome: 41200, avgHouseholdSize: 2.65 }, // South Deering
+  52: { medianAge: 38.0, medianIncome: 48500, avgHouseholdSize: 2.80 }, // East Side
+  53: { medianAge: 39.0, medianIncome: 45300, avgHouseholdSize: 2.70 }, // West Pullman
+  54: { medianAge: 29.5, medianIncome: 18400, avgHouseholdSize: 2.90 }, // Riverdale
+  55: { medianAge: 41.5, medianIncome: 56800, avgHouseholdSize: 2.55 }, // Hegewisch
+  56: { medianAge: 38.5, medianIncome: 74500, avgHouseholdSize: 2.85 }, // Garfield Ridge
+  57: { medianAge: 34.0, medianIncome: 52400, avgHouseholdSize: 3.10 }, // Archer Heights
+  58: { medianAge: 32.5, medianIncome: 46800, avgHouseholdSize: 3.25 }, // Brighton Park
+  59: { medianAge: 35.0, medianIncome: 54200, avgHouseholdSize: 2.80 }, // McKinley Park
+  60: { medianAge: 37.0, medianIncome: 58500, avgHouseholdSize: 2.30 }, // Bridgeport
+  61: { medianAge: 31.0, medianIncome: 38400, avgHouseholdSize: 3.20 }, // New City
+  62: { medianAge: 33.5, medianIncome: 62500, avgHouseholdSize: 3.30 }, // West Elsdon
+  63: { medianAge: 31.5, medianIncome: 44200, avgHouseholdSize: 3.45 }, // Gage Park
+  64: { medianAge: 39.0, medianIncome: 76800, avgHouseholdSize: 2.75 }, // Clearing
+  65: { medianAge: 33.0, medianIncome: 64200, avgHouseholdSize: 3.35 }, // West Lawn
+  66: { medianAge: 32.0, medianIncome: 38600, avgHouseholdSize: 3.15 }, // Chicago Lawn
+  67: { medianAge: 36.5, medianIncome: 29400, avgHouseholdSize: 2.95 }, // West Englewood
+  68: { medianAge: 35.0, medianIncome: 24800, avgHouseholdSize: 2.65 }, // Englewood
+  69: { medianAge: 37.5, medianIncome: 32500, avgHouseholdSize: 2.40 }, // Greater Grand Crossing
+  70: { medianAge: 38.0, medianIncome: 72400, avgHouseholdSize: 2.90 }, // Ashburn
+  71: { medianAge: 40.5, medianIncome: 36200, avgHouseholdSize: 2.45 }, // Auburn Gresham
+  72: { medianAge: 43.0, medianIncome: 106500, avgHouseholdSize: 2.70 }, // Beverly
+  73: { medianAge: 42.0, medianIncome: 52400, avgHouseholdSize: 2.50 }, // Washington Heights
+  74: { medianAge: 41.5, medianIncome: 98600, avgHouseholdSize: 2.80 }, // Mount Greenwood
+  75: { medianAge: 42.5, medianIncome: 68400, avgHouseholdSize: 2.60 }, // Morgan Park
+  76: { medianAge: 39.0, medianIncome: 54200, avgHouseholdSize: 2.20 }, // O'Hare
+  77: { medianAge: 38.5, medianIncome: 58600, avgHouseholdSize: 1.90 }, // Edgewater
+};
